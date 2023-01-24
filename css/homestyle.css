@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#logo{
+    width: 10em;
+}
+.navbar-brand{
+    margin-left: 2px;
+    font-size: 200em;
+}
+
+ /* body{
+    background-image: url(/images/solid-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}  */
+.carousel-caption h5{
+    color: white;
+    font-size: 1.8em;
+}
+.carousel-caption p{
+    color: white;
+    font-size: 1em;
+}
+#kalari{
+    height:572px
+}
+/* @media screen and (min-width: 576px){
+.carousel-inner{
+    display: flex;
+}
+.carousel-item{
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+}
+*/
+.img{
+    height: 9em;
+}
+.card-title{
+    margin-top: 6em;
+}
+
+.siding{
+    margin: 8.6em;
+   
+}
+.card-text{
+    font-family: Arial, Helvetica, Verdana, Geneva, Tahoma, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: bold;
+}
+.siding{
+    transform: scale(3px);
+    transition: 1s ease-in;
+}
+    
+ 
+#jada{
+    background-color: black;
+    color: aqua;
+}
+
+/* card img */
+
+.container1{
+    margin: 0 0 0 0;
+     position: relative; 
+    height: auto;
+    /* float: right; */
+}
+.container2{
+    margin-top: 3em;
+     position: relative; 
+    height: auto;
+}
+/* .container3{
+    margin: 0 0 0 0;
+     position: relative; 
+    height: auto;
+} */
+
+/* .sider{
+    float: right;
+} */
+.image{
+    display: block;
+    height: auto;
+    width: 40%;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 40%;
+    height: 0;
+    transition: 0.5s ease;
+}
+.overlay.art{
+    background-color: rgba(225,0,0,0.65);
+}
+
+/* .overlay.yellow{
+    background-color: rgb(167, 223, 55,0.65);
+} */
+.container1:hover .overlay{
+    height: 100%;
+
+}
+.container2:hover .overlay{
+    height: 100%;
+
+}
+
+
+
+h1{
+    width: 100%;
+    margin-top: 30%;
+    /* color: rgb(80, 2, 2); */
+    font-size: 4vw;
+    position: absolute;
+    text-align: center;
+    font-family: 'damion',cursive;
+    transform: rotate(-5deg)skewX(-5deg);
+}
+h2{
+    text-align: center;
+    font-family: 'roboto',sans-serif;
+    /* color: rgb(58, 5, 5); */
+    font-size: 1.2vw;
+    margin: 60% 0 0 18%;
+    width: 70%;
+    letter-spacing: 5px;
+    line-height: 1.5em;
+}
+#fest{
+    height: 25em;
+    width: 40%;
+}
+/* .container3{
+    float: right;
+}
+.container4{
+    float: right;
+} */
+
+.tharavadu_position{
+     float: right; 
+    margin-top: -49.5em;
+   
+
+}
+.bg-container{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg,rgb(54, 5, 5),rgb(128, 3, 3),rgb(114, 12, 4));
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 6s infinite linear;
+}
+
+
+@keyframes bgAnimatedGradient{
+    0%{
+        background-position: 0 85%;
+    }
+    50%{
+        background-position: 100% 20%;
+    }
+    100%{
+        background-position: 0% 85%;
+    }
+}
+.container3{
+    max-width: 100%;
+    width: 70%;
+    height: 80em;
+    letter-spacing: .3px;
+}
+.container3 p{
+    font-family: 'Damion',cursive;
+    font-size: 5em;
+    color: rgb(71, 136, 6);
+}
+.pic{
+    max-width: 100%;
+    width: 50%;
+    height: 8.2em;
+}

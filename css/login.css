@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg,rgb(38, 73, 124),rgb(13, 232, 240),rgb(224, 248, 8));
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 10s infinite linear;
+}
+
+
+@keyframes bgAnimatedGradient{
+    0%{
+        background-position: 0 85%;
+    }
+    50%{
+        background-position: 100% 20%;
+    }
+    100%{
+        background-position: 0% 85%;
+    }
+}
+ .navbar{
+    margin-left: 2px;
+    font-size: 200em;
+} 
+.container h1{
+    text-align: center;
+    margin-left: 4em;
+    /* text-shadow: 100px; */
+    color: rgb(247, 252, 249);
+}
+.container h2{
+    text-align: center;
+    color: blue;
+}
+.box{
+    margin-left: 25em;
+}
+.forgot{
+    padding-left: 15em;
+    color: rgb(172, 156, 156);
+    text-decoration: none;
+}
+/* .nav{
+    background-color: rgb(126, 15, 15);
+    height: 2.6em;
+    float: right; 
+} */
+/* .container-fluid{
+    height: .01em;
+}
+    */
+
+#logo{
+    width: 10em;
+}
+.bg-container{
+    margin-top: 7em;
+}
+/* .nav-link a{
+color: black;
+} */

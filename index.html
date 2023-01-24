@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism</title>
+    <link rel="stylesheet" href="/css/homestyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!-- font style -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Damion&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header starts here -->
+    <div class="bg-container">
+    <div>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                
+                <img id="logo" src="/images/kerala-logo-removebg-preview.png" alt="deleted">
+              <a class="navbar-brand fs-1 fw-bold text-danger" href="#">Kerala Tourism</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tourism</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a  class="nav-link active" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/html/login.html"><i class="bi bi-person"></i>Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/html/signup.html"><i class="bi bi-person-add"></i>Sign Up</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Districts
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="/html/district.html">Districts</a></li>
+                        <li><a class="dropdown-item" href="#">Trivandrum</a></li>
+                        <li><a class="dropdown-item" href="#">Kollam</a></li>
+                        <li><a class="dropdown-item" href="#">Pathanamthitta</a></li>
+                        <li><a class="dropdown-item" href="#">Alapuzha</a></li>
+                        <li><a class="dropdown-item" href="#">Kottayam</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <!-- header ends here -->
+    <!-- carousel starts here -->
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img src="/images/theyyam.jpg" class="d-block w-100" alt="deleted">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>THEYYAM</h5>
+              <p>കലാബോധവും ശാസ്ത്രചിന്തയും ഈശ്വരഭക്തിയും സമ്മേളിച്ച അനുഷ്ഠനകലയാണ് തെയ്യം.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="/images/fortkochi.jpg" class="d-block w-100" alt="deleted">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>FORTKOCHI</h5>
+              <p>വിവിധ കാലഘട്ടങ്ങളിലായി ഇവിടം വാണ വ്യത്യസ്ത വിഭാഗങ്ങളുടെ സംസ്കാരങ്ങള്‍ ഇടകലര്‍ന്ന് ഇന്നും  നിലനില്‍ക്കുന്ന സ്ഥലം..</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img id="kalari" src="/images/kalari.png" class="d-block w-100" alt="deleted">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>KALARIPAYATTU</h5>
+              <p>ഏറ്റവും പഴക്കമാർന്ന ആയോധനകലകളിൽ ഒന്നായ കളരിപ്പയറ്റ് കേരളത്തിന്റെ അഭിമാനമാണ്.</p>
+            </div>
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- carousel ends here -->
+      <br><br>
+
+      <!-- carousel cards start here -->
+      <div class="row container-fluid">
+      
+        <div id="carouselExampleRide" class="carousel slide col-lg-5" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="/images/festivals_folder/vallamkali-img.jpeg" class="card-img-top" alt="deleted">
+                </div>
+                
+                <div class="card-body card text-bg-warning">
+                  <p class="card-text"> <strong style="color: rgb(116, 5, 5);">One of the oldest traditions of Kerala, Aranmula Boat Race or Aranmula Uthrittathi Vallamkali is a grand event, held between August and September.</strong>  These boat races are generally held during the harvest season, and perhaps the most important of these is the snake boat race or chundan vallam.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="/images/places/kathakali.jpg" class="card-img-top" alt="deleted">
+                </div>
+                
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+            <!-- <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapperjada">
+                  <img src="/images/places/jadayupara.jpeg" class="card-img-top" alt="deleted">
+                </div>
+               
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+            <div class="carousel-item">
+              <div class="card ">
+                <div class="img-wrapper">
+                  <img src="/images/places/Vagamon.jpg" class="card-img-top" alt="deleted">
+                </div>
+                
+                <div class="card-body card text-bg-warning">
+                  <p class="card-text">Vagamon or Wagamon is <strong style="color: rgb(116, 5, 5);">a hill station located in the Central Travancore region of Kerala, India.</strong>  It is a warm and friendly place with cool climate as the temperature is between 10° and 23°C during midday in summer. It is situated 1,100 m above sea level.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="/images/nature_folder/mountain.jpeg" class="card-img-top" alt="...">
+                </div>
+               
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div> -->
+            <div class="carousel-item">
+              <div class="card">
+                <div class="img-wrapper">
+                  <img src="/images/places/Munroe-Island.jpg" class="card-img-top" alt="...">
+                </div>
+                
+                <div class="card-body card text-bg-warning">
+                  <p class="card-text">Munroe Island is <strong style="color: rgb(116, 5, 5);">a hidden pearl in the backwaters which is composed of a cluster of 8 islands.</strong> Each of them is separated by small water channels and lakes. It is located about 27 km from Kollam. It is an ideal spot for canal cruise.</p>
+                  <a href="#" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- carousel card ends here -->
+
+        <!-- 1st card starts here -->
+        <div class="col-lg-5 siding">
+          <div class="card card text-bg-dark mb-3">
+            <div class="img">
+              <img src="/images/places/jadayupara.jpeg" class="card-img-top" alt="...">
+            </div>
+            
+            <div class="card-body">
+              <h5 class="card-title text-white fs-1">JADAYUPPARA</h5>
+              <p id="jada" class="card-text ">Jatayu Earth Center, also known as Jatayu Nature Park or Jatayu Rock, is a park and tourism centre at Chadayamangalam in Kollam district of Kerala. It stands at an altitude of 350m (1200ft) above the mean sea level.
+
+                Jatayu Nature Park holds the distinction of having the world’s largest bird sculpture, which is of Jatayu.</p>
+              
+            </div>
+          </div>
+          </div>
+   <!-- 1st card ends here -->
+
+   <!-- 2nd card starts here -->
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <div class="row container">
+          <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+            <div class="card-header fs-2">PONMUDI</div>
+            <div class="card-body">
+              <h5 class="card-title fs-3"> Most Beautiful Hill Stations in Kerala </h5>
+              <p class="card-text">If you still think that Kerala is all about backwaters, mighty ocean, playful beaches, spice gardens, or evergreen coconut groves, you must visit the stunning hill station called Ponmudi! Around 55km away from the state capital, this promising hill station will make you rethink and create a whole new perception God’s Own Country!
+
+                Enchanted by the spellbinding beauty of the Western Ghats, a drive or ride to Ponmudi has its own fun and excitement. While for the nature lovers, this part of the journey opens an unknown window to Kerala’s mesmerising beauty, adrenaline seekers love to have a tryst with the thrills associated.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;
+          <div class="card text-bg-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header fs-2">VARKALA</div>
+            <div class="card-body">
+              <h5 class="card-title fs-3">List of Beaches in Kerala</h5>
+              
+              <p class="card-text">Flaunting its gracious beauty and charm while having a tryst with the Arabian Sea, Varkala is surely one of the most gorgeous and best places to visit in Kerala! A kaleidoscopic coastal town in Trivandrum, this is in fact the only place in God’s Own Country where cliffs are found alongside the sea-line.
+
+                While being a hotspot among the beach lovers, Varkala is also known for the ancient Janardana Swami Temple that dates back to 2,000 years. If you are planning for a Kerala trip, make sure you visit this quaint town; it will keep you amazed all through with its impeccable beauty, devout ambience, and playful beach!</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card text-bg-success mb-3" style="max-width: 18rem;">
+            <div class="card-header fs-2">NELLIAMPATHY</div>
+            <div class="card-body">
+              <h5 class="card-title fs-3">Stunning hill stations in Kerala.</h5>
+              <p class="card-text">If Kerala is called the ‘God’s Own Country’, Nelliampathy (or Nelliampathi) is fondly called the ‘God’s Own Village’! Located around 60km from Palakkad, this quaint hamlet is one of the least explored and equally stunning hill stations in Kerala.
+
+                With a captivating range of hills that soar up to an astounding height of 467-1,572m, Nelliampathy serves as an ideal getaway to enjoy and revel in the alluring charm of India’s Backwater Capital. With lofty peaks, rugged trails, and around 10-hair pin bends, this tiny, yet enthralling hill station also serves as a hotspot among the thrill and fun seekers.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card text-bg-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header fs-2">MALAMPUZHA</div>
+            <div class="card-body">
+              <h5 class="card-title fs-3">Essence of Kerala</h5>
+              <p class="card-text">India’s ‘Spice Capital’ is all about lush greeneries and heart-warming ambience, hence the name “God’s Own Country’! And while in Malampuzha, located in the Palakkad district, you can feel the true essence of Kerala and its bountiful nature.
+
+                Mostly covered by evergreen vegetation, this part of the state is a picture-perfect display of how we should co-exist with Mother Nature. Malampuzha’s undulating beauty and tranquillity makes it a must to visit place in the entire region of Southern India.</p>
+            </div>
+          </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <div class="card text-bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header fs-2 text-white">BEKAL</div>
+            <div class="card-body">
+              <h5 class="card-title fs-3 text-white">The glorious Bekal Fort</h5>
+              <p class="card-text text-white">Located in the Kasaragod district of Kerala, Bekal is among the most scenic hamlets you can ever visit while on a Kerala tour. A combined beauty of the mighty Arabian Sea and lush landscapes, this tiny, yet pictorial village is of utmost historical importance. The glorious Bekal Fort testifies this fact vividly.
+
+                Serving as a perfect getaway from the concrete life, Bekal enjoys a pleasant climate while wearing a greener shade throughout the year. If you are yearning for silent, yet joyous holiday experience in Kerala, Bekal is the ideal hideout for you!</p>
+            </div>
+          </div>
+          
+         </div>
+
+         <!-- card carousel starts -->
+           <!-- <div class="">
+          <div class="">   -->
+            <!-- <div class="main_container"> -->
+              <div class="container1">
+                <div>
+                  <img style="height: 25em;" class="image" src="/images/Heritage-tour.jpg" alt="deleted">
+                 </div>
+                  
+                  <div class="overlay">
+                    <h1 style="color: white;">Heritage</h1><br><br>
+                    <h2 style="color: white;">Kerala's cultural heritage is centuries old.There are many cultural institutions dedicated to protect these as well.</h2>
+        
+                  </div>
+              </div>
+              
+<br><br> 
+               <!-- <div class="main_container"> -->
+                <div class="container2">
+                  <div>
+                    <img style="height: 24em;" class="image" src="/images/festivals_folder/kerala_fest.jpeg" alt="deleted">
+                  </div>
+                    
+                    <div class="overlay art">
+                      <h1 style="color: white;">Artform</h1><br><br>
+                      <h2 style="color: white;">Kerala has birthed and nurtured a plethora of art forms over a thousand years. Our shores have watched them evolve and flourish in various shapes and forms.</h2>
+          
+                    </div>
+                </div>
+                
+                 <!-- </div> -->
+                 <!-- <div class="main_container"> -->
+                  
+               <div class="container3">
+                
+                <div>
+                  <img class="tharavadu_position" src="/images/districts-folder/Bolgatty_Palace.jpg" alt="">
+                </div>
+                
+                  <p>Bolgatty Palace has a swimming pool, 9-hole golf course, ayurvedic centre, and daily Kathakali performances and is a holiday destination for tourists. There is in a temple dedicated to Shiva that is the first of its kind in Kerala.</p>
+                
+                
+
+               </div>  
+          </div>
+                </div>  
+       
+         
+
+
+
+        </body>
+          
+</html>
