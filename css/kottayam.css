@@ -2,3 +2,14 @@
     padding: 0;
     margin: 0;
 }
+.transport{
+    height: 36em;
+}
+#logo{
+    width: 10em;
+}
+/* .container-fluid.navbar-brand{
+    color: rgb(51, 1, 1);
+    font-size: 9em;
+    margin-left: 22em;
+} */

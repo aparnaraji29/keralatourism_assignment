@@ -34,3 +34,7 @@ body{
     background-size: 600% 600%;
     animation: bgAnimatedGradient 10s infinite linear;
 }
+
+#logo{
+    width: 10em;
+}
