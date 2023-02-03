@@ -16,107 +16,78 @@
   <!-- navbar starts -->
   
   <div>
-    <nav style="height: 50px;" class="navbar navbar-dark bg-primary fixed-top">
-      
+    <nav class="navbar navbar-nav fixed-top">
         <div class="container-fluid">
-          <a style="color: black;" href="../index.html"><i class="bi bi-house"></i>Home</a>
-          <!-- <a style="color: red;font-size: 2em;margin-left: 22em;" class="navbar-brand" href="#">KOTTAYAM</a>
+            
+            <img id="logo" src="../images/kerala-logo-removebg-preview.png" alt="deleted">
+        <div> <a style="margin-left :13em; " class="navbar-brand fs-1 text-white" href="#">WELCOME</a>
+         <a style="margin-left :33em; margin-bottom: 1em;" class="navbar-brand fs-6 text-white" href="#">LOGIN PAGE</a></div>
+
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas offcanvas-end text-bg-primary" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Destinations</h5>
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tourism</h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link " href="/index.html">Home</a>
+                  <a  class="nav-link "  href="../index.html"><i class="bi bi-house"></i> Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/html/login.html">Login</a>
+                  <a class="nav-link active" aria-current="page" href="./login.html"><i class="bi bi-person"></i>Login</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/html/signup.html">Sign up</a>
-                </li>
+                    <a class="nav-link" href="./signup.html"><i class="bi bi-person-add"></i>Sign Up</a>
+                  </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Districts
-                  </a> -->
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Trivandrum</a></li>
-                    <li><a class="dropdown-item" href="#">Kollam</a></li>
-                    <li><a class="dropdown-item" href="#">Pathanamthitta</a></li>
-                    <li><a class="dropdown-item" href="#">Alapuzha</a></li>
-                    <li><a class="dropdown-item" href="#">Kottayam</a></li>
-                    
-                     
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-primary">
+                    <li><a class="dropdown-item" href="./district.html">Districts</a></li>
+                    <li><a class="dropdown-item" href="./tvm.html">Trivandrum</a></li>
+                    <li><a class="dropdown-item" href="./kollam.html">Kollam</a></li>
+                    <li><a class="dropdown-item" href="./pathanamthitta.html">Pathanamthitta</a></li>
+                    <li><a class="dropdown-item" href="./alapuzha.html">Alapuzha</a></li>
+                    <li><a class="dropdown-item" href="./kottayam.html">Kottayam</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                   </ul>
                 </li>
               </ul>
-              <!-- <!-- <!-- <form style="margin-left: 10em;" class="d-flex mt-3" role="search">
+              <form class="d-flex mt-3" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-success" type="submit">Search</button> -->
-                 <!-- <a style="color: red;font-size: 2em;margin-left: 22em;" class="navbar-brand" href="#">KOTTAYAM</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Destinations</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link " href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/html/login.html">Login</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/html/signup.html">Sign up</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle active" aria-current="page" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> -->
-                    <!-- Districts -->
-                  <!-- </a> 
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li><a class="dropdown-item" href="#">Trivandrum</a></li>
-                    <li><a class="dropdown-item" href="#">Kollam</a></li>
-                    <li><a class="dropdown-item" href="#">Pathanamthitta</a></li>
-                    <li><a class="dropdown-item" href="#">Alapuzha</a></li>
-                    <li><a class="dropdown-item" href="#">Kottayam</a></li>
-                    
-                     
-                  </ul>
-                </li>
-              </ul>
-              </form>  -->
+                <button class="btn btn-success" type="submit">Search</button>
+              </form>
             </div>
           </div>
         </div>
       </nav>
-      </div>
+</div>
      
-    
-  <div class="bg-container">
+    <!-- nav ends -->
+  <div class="whole-container">
     <div class="container">
-      <h1 style="margin-right: 6.5em;">WELCOME!</h1>
+      <!-- <h1 style="margin-right: 4em;color: rgb(243, 247, 246); margin-top: .1em;">WELCOME</h1> -->
       <br>
-      <h2>Login To Your Account</h2>
+      <h5 style="text-align:center;margin-top:2em">Login To Your Account</h5>
       <br><br>
       <div class="col-lg-5 box">
-        <form>
+        <form action="../index.html" >
           <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">User Name</label>
-            <input style="font-weight: 500; font-family: 'bootstrap-icons';" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="  &#xF4DA; username">
-           
+            <input onkeyup="validateName();" style="font-weight: 500; font-family: 'bootstrap-icons';" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="  &#xF4DA; username">
+            <span id="user-error"></span>
           </div>
           <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input style="font-family: 'bootstrap-icons';font-weight: 500;" type="password" class="form-control" id="exampleInputPassword1" placeholder="  &#xF47A;password">
+            <input onkeyup=" return StrengthChecker(PasswordParameter);" style="font-family: 'bootstrap-icons';font-weight: 500;" type="password" class="form-control" id="exampleInputPassword1" placeholder="  &#xF47A;password">
+            <span id="pass-error" class="badge displayBadge"></span>
           </div>
           <div class="mb-3 form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -124,7 +95,7 @@
             
             <a class="forgot"  href="#">Forgot Password?</a>
           </div>
-          <button type="submit" class="btn btn-primary">Log In</button>
+          <button onclick=" return validateForm();"  type="submit" class="btn btn-primary">Log In</button>
 <br><br>
 <p>By clicking login you agree to our <a style="color: red;text-decoration: none;" href="">Terms & conditions</a></p>
           <h6>Don't have an account <a href="#">Sign up</a></h6>
@@ -135,7 +106,7 @@
     
   </div>
   <!-- login forms ends -->
-  
+  <script src="../js/login.js"></script>
     
 </body>
 </html>

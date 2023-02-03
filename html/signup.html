@@ -12,50 +12,88 @@
 </head>
 <body>
 
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link"   href="../index.html"><i class="bi bi-house"></i>Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link"   href="./login.html"><i class="bi bi-person"></i>Login</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link  active" aria-current="page" href="./signup.html"><i class="bi bi-person-add"></i>Sign up</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="" role="button" aria-expanded="false">Districts</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="./district.html">Districts</a></li>
-        <li><a class="dropdown-item" href="./tvm.html">Trivandrum</a></li>
-        <li><a class="dropdown-item" href="./kollam.html">Kollam</a></li>
-        <li><a class="dropdown-item" href="./pathanamthitta.html">Pathanamthitta</a></li>
-        <li><a class="dropdown-item" href="./alapuzha.html">Alapuzha</a></li>
-        <li><a class="dropdown-item" href="./kottayam.html">Kottayam</a></li>
-      </ul>
-    </li>
-    
-  </ul>
-  <div class="bg-container" style="margin-top: -6em;">
+ 
+  <div class="whole-container">
+    <div>
+        <nav class="navbar navbar-dark  fixed-top">
+            <div class="container-fluid">
+                
+                <img id="logo" src="../images/kerala-logo-removebg-preview.png" alt="deleted">
+              <a style="color: rgb(247, 245, 246);text-align: center;" class="navbar-brand fs-2 fw " href="#">SIGN UP </a>
+              <button  class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div style="background-color:rgb(39, 93, 243) ;" class="offcanvas offcanvas-end text-bg-" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 style="color: aliceblue;" class="offcanvas-title" id="offcanvasDarkNavbarLabel">Tourism</h5>
+                  <button style="border: black;" type="button" class="btn-close btn-close-dark" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a  class="nav-link active" aria-current="page" href="../index.html"><i class="bi bi-house"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./login.html"><i class="bi bi-person"></i>Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html"><i class="bi bi-person-add"></i>Sign Up</a>
+                      </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Districts
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-">
+                        <li><a class="dropdown-item" href="./district.html">Districts</a></li>
+                        <li><a class="dropdown-item" href="./tvm.html">Trivandrum</a></li>
+                        <li><a class="dropdown-item" href="./kollam.html">Kollam</a></li>
+                        <li><a class="dropdown-item" href="./pathanamthitta.html">Pathanamthitta</a></li>
+                        <li><a class="dropdown-item" href="./alapuzha.html">Alapuzha</a></li>
+                        <li><a class="dropdown-item" href="./kottayam.html">Kottayam</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                      </ul>
+                    </li>
+                  </ul>
+                  <form class="d-flex mt-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <h1 style="margin-bottom: 1em;color: blue; text-align: center;" style="text-align: center;">Sign Up</h1>
+  <div class="bg-container" >
+   
     <div class="container">
+     
       <div style="margin-left: 19em;" class="col-lg-6">
-          <h1 style="margin-top: 2.4em;color: blue;" style="text-align: center;">Sign Up</h1>
+         
           <br><br>
           <form class="row g-3">
               <div class="col-md-12">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input onkeyup="validateEmail();" type="email" class="form-control" id="inputEmail4">
+                <span id="email-error" class="bo-width"></span>
               </div><br><br>
               <div class="col-md-6">
                 <label for="inputPassword4" class="form-label">Password</label>
-                <input type="password" class="form-control" id="inputPassword4">
+                <input  onkeyup=" return StrengthChecker(PasswordParameter);" type="password" class="form-control" id="inputPassword4">
+                <span id="pass-error" class="badge displayBadge"></span>
               </div>
               <div class="col-md-6">
                   <label for="inputPassword4" class="form-label">Repeat Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
+                  <input onkeyup="return validateRepeat();" type="password" class="form-control" id="inputPassword1">
+                  <span id="pass1-error" class="badge displayBadge"></span>
                 </div>
                 <div class="col-md-7">
-                  <label for="inputEmail4" class="form-label">Mobile Number</label>
-                  <input type="text" class="form-control" id="inputEmail4">
+                  <label for="inputEmail4" class="form-label">Phone Number</label>
+                  <input onkeyup=" return phonenumber();" type="text" class="form-control" id="inputphone">
+                  <span id="phone-error"></span>
                 </div>
                 <div class="col-md-6">
                   <label for="inputEmail4" class="form-label">Date of Birth</label>
@@ -113,6 +151,7 @@
   </div>
   
   </div>
-    
+    </div>
+    <script src="../js/signup.js"></script>
 </body>
 </html>

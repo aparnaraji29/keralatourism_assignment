@@ -3,12 +3,7 @@
     margin: 0;
 }
 .bg-container{
-    background-color: #fff;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(60deg,rgb(230, 37, 37),rgb(236, 36, 36),rgb(116, 12, 5));
-    background-size: 600% 600%;
-    animation: bgAnimatedGradient 10s infinite linear;
+   
 }
 
 
@@ -23,8 +18,34 @@
         background-position: 0% 85%;
     }
 }
-.nav{
-    background-color: rgb(126, 15, 15);
-    height: 2.6em;
-    float: right;
+#logo{
+    width: 10em;
+}
+.whole-container{
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 1.4em;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(60deg,rgb(161, 194, 43),rgb(13, 232, 240),rgb(224, 248, 8));
+    background-size: 600% 600%;
+    animation: bgAnimatedGradient 10s infinite linear;
+}
+.navbar-brand{
+    margin-left: 2px;
+    font-size: 200em;
+}
+.navbar{
+    height: 6em;
+    background-color: rgb(63, 205, 248);
+}
+
+.displayBadge{
+    margin-top: 5%; 
+    display: none; 
+    text-align :center;
+    /* visibility: hidden; */
 }
